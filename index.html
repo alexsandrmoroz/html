@@ -1,12 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="home1440-style.css">
     <link rel="stylesheet" href="fonts_style.css">
+    <link rel="stylesheet" href="icomoon-v1/style.css">
+    <script src="headerscripts.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -17,46 +16,710 @@
         <div class="header_top">
             <div class="header_left">
                 <div class="open_info">
-                    ПН-ПТ: 09:00–18:00
+                    пн-пт: 09:00–18:00
                 </div>
                 <a class="tel" href="tel:+380968120013">+38 (096) 812 00 13</a>
             </div>
 
             <div class="header_right">
                 <div class="language">
-                    МОВА : УКР <!--<img src="svg/menu.svg" alt="">-->
+<!--                    МОВА : УКР-->
+
+                    <!--<img src="svg/menu.svg" alt="">-->
+<!--                    <div class="language_option">УКР</div>-->
+<!--                    <div class="language_option">АНГЛ</div>-->
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">МОВА : УКР &nbsp; <span class="icon-caret-down"></span></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Українська</a>
+                            <a href="#">НЕВІДОМА</a>
+                            <a href="#">Англійська</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="currency">
-                    ВАЛЮТА: UAH
+                    <div class="dropdown2">
+                        <button onclick="myFunction2()" class="dropbtn2">ВАЛЮТА: UAH &nbsp; <span class="icon-caret-down"></span></button>
+                        <div id="myDropdown2" class="dropdown-content2">
+                            <a href="#">EUR</a>
+                            <a href="#">UAH</a>
+                            <a href="#">USD</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="rectangle1"></div>
         </div>
 
         <div class="header_bottom">
-
             <div class="logo">
                 <img src="svg/logo.svg" alt="">
             </div>
+
             <div class="header_menu">
-                <ul>
-                    <li class="name_cat">Одяг</li>
-                    <li class="name_cat">Медицина</li>
-                    <li class="name_cat">Підсумки</li>
-                    <li class="name_cat">Рюкзаки</li>
-                    <li class="name_cat">Розгрузка</li>
-                </ul>
+                <div class="category_link">Одяг</div>
+                <div class="category_link">Медицина</div>
+                <div class="category_link">Підсумки</div>
+                <div class="category_link">Рюкзаки</div>
+                <div class="category_link">Розгрузка</div>
             </div>
+
             <div class="header_menu_right">
-                <div class="search"></div>
-                <div class="account"></div>
-                <div class="wishlist"></div>
-                <div class="basket"></div>
+                <div class="wrap_menu_icon">
+                    <span class="icon-icon-search"></span>
+<!--                    <div class="menu_icon"><img src="svg/noun_Search.svg" alt=""></div>-->
+                </div>
+                <div class="wrap_menu_icon">
+                    <span class="icon-icon-1-2"></span>
+<!--                    <div class="menu_icon"><img src="svg/icon_user.svg" alt=""></div>-->
+                </div>
+                <div class="wrap_menu_icon">
+                    <span class="icon-heart_card"></span>
+<!--                    <div class="menu_icon"><img src="svg/noun_Love.svg" alt="">-->
+<!--                    </div>-->
+                    <span class="icon_active1">4</span>
+                </div>
+                <div class="wrap_menu_icon_end">
+                    <span class="icon-noun_cart_3566228-2"></span>
+                    <span class="icon_active2">28</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!--    &lt;!&ndash;    banner&#45;&#45;start&ndash;&gt;-->
+<!--    <div class="wrap_banner">-->
+<!--        -->
+<!--        <img src="svg/banner-01.svg" alt="">-->
+<!--&lt;!&ndash;        <span class="icon-arrow_slider_l"></span>&ndash;&gt;-->
+
+<!--        <div class="banner_arrow_slaider">-->
+<!--            <span class="icon-arrow_slider_l"></span>-->
+<!--            <span class="icon-arrow_slider_r"></span>-->
+<!--        </div>-->
+<!--        <div class="banner_slaider">-->
+<!--            <div class="button_news">Переглянути новинки</div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;    banner&#45;&#45;end&ndash;&gt;-->
+
+    <!--    banner--start-->
+    <div class="wrap_banner">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade"style="display: block;">
+            <img src="svg/banner-01.svg">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="svg/hofner-banner_2.svg">
+        </div>
+        <div class="banner_arrow_slaider">
+            <a class="icon-arrow_slider_l" onclick="plusSlides(-1)"></a>
+            <a class="icon-arrow_slider_r" onclick="plusSlides(1)"></a>
+        </div>
+
+
+<!--        <img src="svg/banner-01.svg" alt="">-->
+        <!--        <span class="icon-arrow_slider_l"></span>-->
+
+<!--        <div class="banner_arrow_slaider">-->
+<!--            <span class="icon-arrow_slider_l"></span>-->
+<!--            <span class="icon-arrow_slider_r"></span>-->
+<!--        </div>-->
+        <div class="banner_slaider">
+            <div class="button_news">Переглянути новинки</div>
+        </div>
+    </div>
+    <!--    banner--end-->
+
+
+    <!--    product--start-->
+    <div class="wrap_product">
+        <div class="product_content">
+            <div class="product_content_title">
+                Наші товари
+            </div>
+            <div class="product_content_desc">
+                Ми ретельно контролюємо виготовлення кожної частини спорядження та відбираємо тільки кращі матеріали
+            </div>
+        </div>
+        <div class="product_content">
+            <div class="product_content_svg">
+                <img src="svg/army-soldiers-fighting-with-guns-defending-their-country_1.svg" alt="">
+            </div>
+            <div class="product_content_block">
+                <div class="top_block">
+                    <div class="top_block_top">Обирай</div>
+                    <div class="top_block_button">Одяг</div>
+                </div>
+                <div class="button_block">
+                    Усі товари &nbsp<span class="icon-arrow_slider_r icon-arrow_slider_r_small"></span>
+                </div>
+            </div>
+        </div>
+        <div class="product_content">
+            <div class="product_content_svg">
+                <img src="svg/army-soldiers-fighting-with-guns-defending-their-country_2.svg" alt="">
+            </div>
+            <div class="product_content_block">
+                <div class="top_block">
+                    <div class="top_block_top">Обирай</div>
+                    <div class="top_block_button">Медицина</div>
+                </div>
+                <div class="button_block">
+                    Усі товари &nbsp<span class="icon-arrow_slider_r icon-arrow_slider_r_small"></span>
+                </div>
+            </div>
+        </div>
+        <div class="product_content">
+            <div class="product_content_svg">
+                <img src="svg/jakob-owens-ZesUefCgYLc-unsplash_4.svg" alt="">
+            </div>
+            <div class="product_content_block">
+                <div class="top_block">
+                    <div class="top_block_top">Обирай</div>
+                    <div class="top_block_button">Підсумки</div>
+                </div>
+                <div class="button_block">
+                    Усі товари &nbsp<span class="icon-arrow_slider_r icon-arrow_slider_r_small"></span>
+                </div>
+            </div>
+        </div>
+        <div class="product_content">
+            <div class="product_content_svg">
+                <img src="svg/specna-arms-Um9WPLvWV_M-unsplash_5.svg" alt="">
+            </div>
+            <!--            <img src="svg/specna-arms-Um9WPLvWV_M-unsplash_5.svg" alt="">-->
+            <div class="product_content_block">
+                <div class="top_block">
+                    <div class="top_block_top">Обирай</div>
+                    <div class="top_block_button">Рюкзаки</div>
+                </div>
+                <div class="button_block">
+                    Усі товари &nbsp<span class="icon-arrow_slider_r icon-arrow_slider_r_small"></span>
+                </div>
+            </div>
+        </div>
+        <div class="product_content">
+            <div class="product_content_svg">
+                <img src="svg/diego-gonzalez-nJI8WAqpn7Y-unsplash_6.svg" alt="">
+            </div>
+            <div class="product_content_block">
+                <div class="top_block">
+                    <div class="top_block_top">Обирай</div>
+                    <div class="top_block_button">Розгрузки</div>
+                </div>
+                <div class="button_block">
+                    Усі товари &nbsp<span class="icon-arrow_slider_r icon-arrow_slider_r_small"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    product--end-->
+
+    <!--    wrap_new_made_product &#45;&#45; start-->
+    <div class="wrap_new_made_product">
+        <div class="new_made_product">
+            <div class="new_made_product_top">
+                <div class="new_made_product_name">
+                    Наші нові розробки
+                </div>
+
+                <div class="new_made_product_all">
+                    <div class="new_made_product_arrow">
+                        <div class="new_made_product_arrow_left">
+                            <span class="icon-arrow_left_card"></span>
+                        </div>
+                        <div class="new_made_product_arrow_right">
+                            <span class="icon-arrow_right_card"></span>
+                        </div>
+                    </div>
+                    <div class="new_made_product_all_link">
+                        <a href="">Усі товари</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new_made_product_bottom">
+                <!--                1 card start-->
+                <div class="new_made_product_cards">
+                    <div class="new_made_product_cards_tag_sale">
+                        -40%
+                    </div>
+                    <div class="new_made_product_card_top">
+                        <div class="new_made_product_card_top_svg">
+                            <img src="svg/cs_pixel_mm14.svg" alt="">
+                        </div>
+                        <div class="new_made_product_card_top_title">
+                            Бойова сорочка cs pixel mm14
+                        </div>
+                        <div class="new_made_product_card_top_price">
+                            <div class="new_made_product_card_top_price_sale"> 3 543,00 ₴ &nbsp;</div>
+                            <div class="new_made_product_card_top_price_now">4 168,00 ₴</div>
+                        </div>
+                    </div>
+
+
+                    <div class="new_made_product_card_bottom">
+                        <div class="new_made_product_card_bottom_tobasket">
+                            <div class="new_made_product_card_bottom_tobasket_title">
+                                До кошика &nbsp; <span class="icon-noun_cart_3566228-2"></span>
+                            </div>
+                        </div>
+
+                        <div class="new_made_product_card_bottom_towishlist">
+                            <div class="new_made_product_card_bottom_towishlist_title">
+                                В обране &nbsp; <span class="icon-heart_card"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                1 card end-->
+                <div class="new_made_product_cards">
+                    <div class="new_made_product_cards_tag_sale">
+                        -40%
+                    </div>
+                    <div class="new_made_product_card_top">
+                        <div class="new_made_product_card_top_svg">
+                            <img src="svg/multicam_comiya_jpc.svg" alt="">
+                        </div>
+                        <div class="new_made_product_card_top_title">
+                            ЧОХОЛ БРОНЕЖИЛЕТА MULTICAM (КОПІЯ JPC)
+                        </div>
+                        <div class="new_made_product_card_top_price">
+                            <div class="new_made_product_card_top_price_sale"> 3 543,00 ₴ &nbsp;</div>
+                            <div class="new_made_product_card_top_price_now">4 168,00 ₴</div>
+                        </div>
+                    </div>
+
+
+                    <div class="new_made_product_card_bottom">
+                        <div class="new_made_product_card_bottom_tobasket">
+                            <div class="new_made_product_card_bottom_tobasket_title">
+                                До кошика &nbsp; <span class="icon-noun_cart_3566228-2"></span>
+                            </div>
+                        </div>
+
+                        <div class="new_made_product_card_bottom_towishlist">
+                            <div class="new_made_product_card_bottom_towishlist_title">
+                                В обране &nbsp; <span class="icon-heart_card"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new_made_product_cards">
+                    <div class="new_made_product_cards_tag_new">
+                        new
+                    </div>
+                    <div class="new_made_product_card_top">
+                        <div class="new_made_product_card_top_svg">
+                            <img src="svg/multicam_ifak_aptechka.svg" alt="">
+                        </div>
+                        <div class="new_made_product_card_top_title">
+                            ПІДСУМОК ДЛЯ АПТЕЧКИ IFAK MULTICAM
+                        </div>
+                        <div class="new_made_product_card_top_price">
+                            <!-- <div class="new_made_product_card_top_price_sale"> 1 151,00 ₴ &nbsp</div>-->
+                            <div class="new_made_product_card_top_regural_price">1 151,00 ₴</div>
+                        </div>
+                    </div>
+
+
+                    <div class="new_made_product_card_bottom">
+                        <div class="new_made_product_card_bottom_tobasket">
+                            <div class="new_made_product_card_bottom_tobasket_title">
+                                До кошика &nbsp; <span class="icon-noun_cart_3566228-2"></span>
+                            </div>
+                        </div>
+
+                        <div class="new_made_product_card_bottom_towishlist">
+                            <div class="new_made_product_card_bottom_towishlist_title">
+                                В обране &nbsp; <span class="icon-heart_card"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new_made_product_cards">
+                    <div class="new_made_product_cards_tag_sale">
+                        -20%
+                    </div>
+                    <div class="new_made_product_card_top">
+                        <div class="new_made_product_card_top_svg">
+                            <img src="svg/carcas_for_bug.svg" alt="">
+                        </div>
+                        <div class="new_made_product_card_top_title">
+                            КАРКАСНИЙ ПІДСУМОК ДЛЯ СКИДУ МУЛЬТИКАМ
+                        </div>
+                        <div class="new_made_product_card_top_price">
+                            <div class="new_made_product_card_top_price_sale"> 835,00 ₴ &nbsp;</div>
+                            <div class="new_made_product_card_top_price_now"> 710,00 ₴</div>
+                        </div>
+                    </div>
+
+
+                    <div class="new_made_product_card_bottom">
+                        <div class="new_made_product_card_bottom_tobasket">
+                            <div class="new_made_product_card_bottom_tobasket_title">
+                                До кошика &nbsp; <span class="icon-noun_cart_3566228-2"></span>
+                            </div>
+                        </div>
+
+                        <div class="new_made_product_card_bottom_towishlist">
+                            <div class="new_made_product_card_bottom_towishlist_title">
+                                В обране &nbsp; <span class="icon-heart_card"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--    wrap_new_made_product &#45;&#45; end-->
+
+
+    <!--    info block 1\3 -&#45;&#45; start-->
+
+    <div class="wrap_info_block_first">
+        <div class="wrap_info_block_first_rectangl">
+            <img src="svg/info_block_rectangle.svg" alt="">
+        </div>
+        <div class="info_block_first">
+
+            <div class="info_block_first_text_block">
+                <div class="info_block_first_text_title">
+                    ЯКІСНЕ ТАКТИЧНЕ СПОРЯДЖЕННЯ ДЛЯ СПЕЦПІДРОЗДІЛІВ
+                </div>
+                <div class="info_block_first_text_disc">
+                    Наші клієнти – гарант якості. Продукція Hofner, в першу чергу, розрахована для
+                    підрозділів спецназу і військової розвідки. Також, нашу екіпіровку
+                    використовують солдати збройних сил України, прикордонної служби,
+                    нацгвардія, добровольчі батальйони, працівники ДСО, морські піхотинці,
+                    військові парамедики і десантники. <br>
+
+                    <br>Завдання нашого тактичного спорядження – не підвести в бою і бути корисним
+                    позаду лінії фронту. Примітно, що спорядження Hofner користується попитом і
+                    на "Великій землі". Крім військових дій, наше екіпірування якісно
+                    зарекомендувало себе серед страйкболістів та мисливців.
+                </div>
+            </div>
+
+            <div class="info_block_first_svg_block">
+                <div class="info_block_first_svg">
+                    <img src="svg/info_block_first.svg" alt="">
+                </div>
             </div>
 
         </div>
     </div>
 
+    <!--    info block 1\3 -&#45;&#45; end-->
+
+    <!--    info block 2\3 -&#45;&#45; start-->
+    <div class="wrap_info_block_second">
+        <div class="info_block_second">
+            <div class="info_block_second_text_block">
+                <div class="info_block_second_text_title">
+                    Ще більше цікавого у нашому Instagram
+                </div>
+                <div class="info_block_second_text_disc">
+                    Підписуйся на нашу сторінку в Instagram та
+                    першим дізнайвайся про новинки та акції. Також
+                    на тебе чекають огляди популярних товарів,
+                    майстер-класи та багато іншого.</div>
+                <div class="info_block_second_text_button">
+                    <div class="info_block_second_button">
+                        Перейти до instagram
+                    </div>
+                </div>
+            </div>
+
+            <div class="info_block_second_svg_blocks">
+                <div class="info_block_second_svg_block">
+                    <div class="info_block_second_svg">
+                        <img src="svg/info_block_2/hofner_1.svg" alt="">
+                    </div>
+                    <div class="info_block_second_tag_tag">
+                        @hofner.ukraine
+                    </div>
+                </div>
+                <!--                    <div class="info_block_second_box_svg_tag">-->
+                <!--                        <div class="info_second_tag">-->
+                <!--                            @hofner.ukraine-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <div class="info_block_second_svg_block">
+                    <div class="info_block_second_svg">
+                        <img src="svg/info_block_2/hofner_3.svg" alt="">
+                    </div>
+                    <div class="info_block_second_tag_tag">
+                        @hofner.ukraine
+                    </div>
+                </div>
+                <div class="info_block_second_svg_block">
+                    <div class="info_block_second_svg">
+                        <img src="svg/info_block_2/hofner_2.svg" alt="">
+                    </div>
+                    <div class="info_block_second_tag_tag">
+                        @hofner.ukraine
+                    </div>
+                </div>
+                <div class="info_block_second_svg_block">
+                    <div class="info_block_second_svg">
+                        <img src="svg/info_block_2/hofner_7.svg" alt="">
+                    </div>
+                    <div class="info_block_second_tag_tag">
+                        @hofner.ukraine
+                    </div>
+                </div>
+                <div class="info_block_second_svg_block">
+                    <div class="info_block_second_svg">
+                        <img src="svg/info_block_2/hofner_8.svg" alt="">
+                    </div>
+                    <div class="info_block_second_tag_tag">
+                        @hofner.ukraine
+                    </div>
+                </div>
+                <div class="info_block_second_svg_block">
+                    <div class="info_block_second_svg">
+                        <img src="svg/info_block_2/hofner_9.svg" alt="">
+                    </div>
+                    <div class="info_block_second_tag_tag">
+                        @hofner.ukraine
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    info block 2\3 -&#45;&#45; end-->
+
+    <!--    info block 3\3 -&#45;&#45; start-->
+
+    <div class="wrap_info_block_three">
+        <div class="wrap_info_block_first_rectangl">
+            <img src="svg/info_block_rectangle.svg" alt="">
+        </div>
+        <div class="info_block_first">
+
+            <div class="info_block_first_text_block info_block_third_text_block">
+                <div class="info_block_first_text_title">
+                    ЯКІСНЕ ТАКТИЧНЕ СПОРЯДЖЕННЯ ДЛЯ СПЕЦПІДРОЗДІЛІВ
+                </div>
+                <div class="info_block_first_text_disc">
+                    Наші клієнти – гарант якості. Продукція Hofner, в першу чергу, розрахована для
+                    підрозділів спецназу і військової розвідки. Також, нашу екіпіровку
+                    використовують солдати збройних сил України, прикордонної служби,
+                    нацгвардія, добровольчі батальйони, працівники ДСО, морські піхотинці,
+                    військові парамедики і десантники. <br>
+
+                    <br>Завдання нашого тактичного спорядження – не підвести в бою і бути корисним
+                    позаду лінії фронту. Примітно, що спорядження Hofner користується попитом і
+                    на "Великій землі". Крім військових дій, наше екіпірування якісно
+                    зарекомендувало себе серед страйкболістів та мисливців.
+                </div>
+            </div>
+
+            <div class="info_block_first_svg_block info_block_third_svg_block">
+                <div class="info_block_first_svg">
+                    <iframe width="726" height="326" src="https://www.youtube.com/embed/7JoTakp1w1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--    info block 3\3 end-->
+
+    <!--    info_boxs_start-->
+    <div class="wrap_info_boxs">
+        <div class="info_boxs">
+            <div class="one_info_box one_info_box_marg">
+                <div class="title_one_info_box">Наші переваги</div>
+                <div class="desc_one_info_box">Ми добре знаємо, що від якості виготовленого
+                    нами екіпірування залежить чиєсь життя.
+                    Наша головна мета – не допустити того, щоб солдат втратив його.
+                </div>
+            </div>
+
+            <div class="one_info_box">
+                <div class=".icon_one_info_box"><span class="icon-tools"></span></div>
+                <div class="titles_one_info_box">Дбайливо продумуємо дизайн</div>
+                <div class="desc_one_info_box">Наші конструктори здобувають своє натхення " з усіх річок".
+                    Ми пильно стежимо за новинками тактичного спорядження на світовому ринку.
+                    Вивчаємо продукцію топових брендів, переймаємо їх досвід.
+                    Кращі розробки провідних армій світу втілені в наших продуктах.
+                </div>
+                <div class="read_more_one_info_box">читати більше</div>
+            </div>
+
+            <div class="one_info_box">
+                <div class=".icon_one_info_box"><span class="icon-chat"></span></div>
+                <div class="titles_one_info_box">Враховуємо побажання бійців</div>
+                <div class="desc_one_info_box">У розробці може взяти участь будь-який клієнт.
+                    Чому? Те, що помітили ви, могли не побачити ми.
+                    Солдат із бойовим досвідом, що випробував на
+                    собі безліч видів тактичного спорядження точно знає,
+                    що оптимально підходить для ведення <br>
+                    бойових дій.
+                </div>
+                <div class="read_more_one_info_box">читати більше</div>
+            </div>
+
+            <div class="one_info_box">
+                <div class=".icon_one_info_box"><span class="icon-target1"></span></div>
+                <div class="titles_one_info_box">Враховуємо побажання бійців</div>
+                <div class="desc_one_info_box">У розробці може взяти участь будь-який клієнт.
+                    Чому? Те, що помітили ви, могли не побачити ми.
+                    Солдат із бойовим досвідом, що випробував на
+                    собі безліч видів тактичного спорядження точно знає,
+                    що оптимально підходить для ведення <br>
+                    бойових дій.
+                </div>
+                <div class="read_more_one_info_box">читати більше</div>
+            </div>
+
+            <div class="one_info_box">
+                <div class=".icon_one_info_box"><span class="icon-icon-textile"></span></div>
+                <div class="titles_one_info_box">Враховуємо побажання бійців</div>
+                <div class="desc_one_info_box">У розробці може взяти участь будь-який клієнт.
+                    Чому? Те, що помітили ви, могли не побачити ми.
+                    Солдат із бойовим досвідом, що випробував на
+                    собі безліч видів тактичного спорядження точно знає,
+                    що оптимально підходить для ведення <br>
+                    бойових дій.
+                </div>
+                <div class="read_more_one_info_box">читати більше</div>
+            </div>
+
+            <div class="one_info_box">
+                <div class=".icon_one_info_box"><span class="icon-global"></span></div>
+                <div class="titles_one_info_box">Враховуємо побажання бійців</div>
+                <div class="desc_one_info_box">У розробці може взяти участь будь-який клієнт.
+                    Чому? Те, що помітили ви, могли не побачити ми.
+                    Солдат із бойовим досвідом, що випробував на
+                    собі безліч видів тактичного спорядження точно знає,
+                    що оптимально підходить для ведення <br>
+                    бойових дій.
+                </div>
+                <div class="read_more_one_info_box">читати більше</div>
+            </div>
+        </div>
+        <div class="footer_img">
+            <img src="svg/footer_img.svg" alt="">
+        </div>
+    </div>
+
+    <!--    info_boxs_end-->
+
+    <!--    footer_start-->
+    <div class="footer_wrap">
+        <div class="footer">
+            <div class="footer_list">
+
+                <div class="footer_one_list">
+                    <div class="one_list_title">Каталог товарів</div>
+                    <div class="one_list_page">Одяг</div>
+                    <div class="one_list_page">Медицина</div>
+                    <div class="one_list_page">Підсумки</div>
+                    <div class="one_list_page">Рюкзаки</div>
+                    <div class="one_list_page">Розгрузки</div>
+                </div>
+
+                <div class="footer_one_list">
+                    <div class="one_list_title">Покупцям</div>
+                    <div class="one_list_page">Розмір сітки</div>
+                    <div class="one_list_page">Матеріали</div>
+                    <div class="one_list_page">Доставка та оплата</div>
+                    <div class="one_list_page">Обмін та повернення</div>
+                    <div class="one_list_page">Контакти</div>
+                </div>
+
+                <div class="footer_one_list">
+                    <div class="one_list_title">Компанія</div>
+                    <div class="one_list_page">Блог</div>
+                    <div class="one_list_page">Публічна оферта</div>
+                    <div class="one_list_page">Політика конфіденційності</div>
+                    <div class="one_list_page">Правила використання <br> файлів Cookie</div>
+                </div>
+
+                <div class="footer_one_list">
+                    <div class="one_list_title one_list_title_con">Контакти</div>
+                    <div class="one_list_contact_phone">
+                        <div class="one_list_contact_phone_icon">
+                            <span class="icon-icon_phone_prem"></span>
+                        </div>
+                        <div class="one_list_contact_phone_nomber">
+                            <div class="one_list_contact_phone_nomber_top">+38 (096) 812 00 13</div>
+                            <div class="one_list_contact_phone_nomber_bottom">Пн–Сб, 09:00–19:00</div>
+                        </div>
+                    </div>
+                    <div class="one_list_contact_email">
+                        <div class="one_list_contact_phone_icon">
+                            <span class="icon-icon_post_prem"></span>
+                        </div>
+                        <div class="one_list_contact_phone_nomber">
+                            <div class="one_list_contact_phone_nomber_top">hofner.ukraine@gmail.com</div>
+                            <div class="one_list_contact_phone_nomber_bottom">Електронна адреса</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_email">
+                <div class="footer_one_list">
+                    <div class="footer_one_list_title">Підписка на новини та акції</div>
+                    <div class="footer_one_lisе_email">
+                        <div class="footer_one_list_email_form">
+                            E-mail
+                            <!--                            <input name="guruweba_example_email" type="email" placeholder="E-mail" />-->
+                        </div>
+                        <div class="footer_one_list_email_button">
+                            Оформити підписку
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    footer_end-->
+
+    <div class="rectangle2"></div>
+
+    <!--    footer_ziro_start-->
+    <div class="footer_ziro">
+        <div class="footer_ziro_logo">
+            <img src="svg/logo.svg" alt="">
+        </div>
+        <div class="footer_ziro_social">
+            <div class="footer_ziro_social_card">
+                <div class="footer_ziro_social_card_visa">
+                    <img src="svg/icon_design/icon-visa.svg" alt="">
+                </div>
+                <div class="footer_ziro_social_card_mastercard">
+                    <img src="svg/icon_design/icon-mastercard.svg" alt="">
+                </div>
+            </div>
+            <div class="footer_ziro_social_inst">
+                <span class="icon-facebook-with-circle"></span>
+                <span class="icon-instagram-with-circle"></span>
+                <span class="icon-youtube-with-circle"></span>
+            </div>
+        </div>
+        <div class="footer_ziro_dev_web_sys">
+            <div class="footer_ziro_dev_web_sys_logo">
+                <img src="svg/icon_design/icon-web_sys.svg" alt="">
+            </div>
+            <div class="footer_ziro_dev_web_sys_desc">
+                Quality Business Solutions
+            </div>
+        </div>
+    </div>
+    <!--    footer_ziro_end-->
+
 </div>
-</body>
-</html>
+
+</body></html>
